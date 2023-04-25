@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge #1 &ndash; Encriptador &ndash; Alura Latam</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Componentes -->
+    <!-- Entrada -->
+    <!-- <textarea name="entrada" id="entrada" cols="20" rows="10"></textarea> -->
+
+    <!-- Salida -->
+    <!-- <textarea
+      name="resultado"
+      id="resultado"
+      cols="20"
+      rows="10"
+      readonly
+    ></textarea> -->
+
+    <!-- Botones -->
+    <!-- <button type="button" id="boton-encriptar">Encriptar</button>
+    <button type="button" id="boton-desencriptar">Desencriptar</button>
+    <button
+      type="button"
+      id="boton-copiar"
+      class="btn btn__copiar btn__copiar--oculto"
+    >
+      Copiar
+    </button> -->
+
+    <!-- ----------------------------------------------------- -->
+
+    <div class="container">
+      <header>
+        <div class="header__logo">
+          <img src="assets/img/logo.png" alt="Logo" />
+        </div>
+      </header>
+      <main>
+        <section class="section section__left">
+          <textarea
+            class="section__left__entrada"
+            id="entrada"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+
+          <p class="warning">
+            Solo ingrese letras minusculas, numeros del 0-9, comas y puntos.
+          </p>
+
+          <div class="botones">
+            <button class="btn btn__encriptar" id="boton-encriptar">
+              Encriptar
+            </button>
+            <button class="btn btn__desencriptar" id="boton-desencriptar">
+              Desencriptar
+            </button>
+          </div>
+        </section>
+
+        <section class="section section__right">
+          <div class="container__right">
+            <div id="not_found" class="not__found">
+              <div class="container__imagen">
+                <img src="assets/img/Muñeco.png" alt="Muñeco" />
+              </div>
+
+              <div class="section__right__title">
+                <p>Ningún mensaje fue encontrdado</p>
+              </div>
+
+              <div class="section__right__description">
+                <p>Ingrese el texto que desees encriptar o desencriptar.</p>
+              </div>
+            </div>
+
+            <div id="found">
+              <textarea
+                id="resultado"
+                class="resultado not__found--off"
+                readonly
+              ></textarea>
+
+              <button
+                type="button"
+                id="boton-copiar"
+                class="btn btn__copiar btn__copiar--oculto"
+              >
+                Copiar
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer__info">
+          <p>
+            Hecho con <span class="corazon">❤</span> por
+            <a href="https://www.linkedin.com/in/horaciodev/" target="_blank">
+              Horacio Lopez Moreno
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>
