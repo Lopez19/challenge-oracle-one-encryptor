@@ -89,7 +89,7 @@ document.getElementById("boton-desencriptar").addEventListener("click", () => {
 });
 
 document.getElementById("boton-copiar").addEventListener("click", () => {
-  const texto = document.getElementById("resultado").value;
+  const texto = document.getElementById("resultado").textContent;
   const copiado = copiar(texto);
 
   if (copiado) {
