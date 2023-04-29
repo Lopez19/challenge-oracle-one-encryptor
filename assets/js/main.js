@@ -7,8 +7,11 @@ import {
 } from "./funciones.js";
 
 // Eventos
+const botonEncriptar = document.getElementById("boton-encriptar");
+const botonDesencriptar = document.getElementById("boton-desencriptar");
+const botonCopiar = document.getElementById("boton-copiar");
 
-document.getElementById("boton-encriptar").addEventListener("click", () => {
+botonEncriptar.addEventListener("click", () => {
   const texto = document.getElementById("entrada").value;
 
   if (validarTexto(texto) && texto !== "") {
@@ -48,7 +51,7 @@ document.getElementById("boton-encriptar").addEventListener("click", () => {
   }
 });
 
-document.getElementById("boton-desencriptar").addEventListener("click", () => {
+botonDesencriptar.addEventListener("click", () => {
   const texto = document.getElementById("entrada").value;
 
   if (validarTexto(texto) && texto !== "") {
@@ -88,7 +91,7 @@ document.getElementById("boton-desencriptar").addEventListener("click", () => {
   }
 });
 
-document.getElementById("boton-copiar").addEventListener("click", () => {
+botonCopiar.addEventListener("click", () => {
   const texto = document.getElementById("resultado").textContent;
   const copiado = copiar(texto);
 
