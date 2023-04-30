@@ -94,10 +94,14 @@ botonDesencriptar.addEventListener("click", () => {
 botonCopiar.addEventListener("click", () => {
   const texto = document.getElementById("resultado").textContent;
   const copiado = copiar(texto);
-
   if (copiado) {
     alert("Texto copiado en el portapapeles");
   } else {
     alert("No hay texto para copiar");
   }
 });
+
+// Fecha
+const fechaActual = document.getElementById("fechaActual");
+const año = new Date().getFullYear();
+fechaActual.innerHTML = año;
